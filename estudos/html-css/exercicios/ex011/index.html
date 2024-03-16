@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Flexíveis</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png"> 
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png"> 
+        <img src="img/foto-g.png" alt="A imagem flexível funciona">
+    </picture>
+
+    <p>Note que a tag &lt;source&gt; possui três atributos: </p>
+    <ul>
+        <li><em>Type:</em> vai indicar o media type da imagem que usamos (veja mais informaçoes sobre media types no capítulo 10)</li>
+        <li><em>srcset:</em> Vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido.</li>
+        <li><em>media: </em> Indica o tamanho máximo a ser considerado para carregar a imagem indicada no atributo <em>srcset</em></li> 
+    </ul>
+
+    <h2>Vamos falar sobre áudio</h2>
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/girl-on-top.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/two-hearts.mp3" type="audio/mpeg">
+    </audio>
+    
+    <a href="midia/two-hearts.mp3" donwload="two-hearts.mp3" type="audio/mpeg">Audio</a>
+    <p>Vamos analisar os principais atributos da tag &lt;audio&gt; antes de mais nada:</p>
+    <ul>
+        <li>O atributo <em>preload</em> indica se o áudio será pré-carregado ou não e aceita três valores:</li>
+        <ul type="">
+            <li><em>metadata</em> vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc)</li>
+            <li><em>none</em> não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução</li>
+            <li><em>auto</em> (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play.</li>
+        </ul>
+        <li>O atributo <em>controls</em> vai apresentar o player na tela. Caso não seja colocado na tag &lt;audio&gt; o controle será transparente e o usuário não poderá interagir com ele.</li>
+        <li>O atirbuto <em>autoplay</em>, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada.</li>
+        <li>O atributo <em>loop</em> vai fazer com que o áudio seja repetido eternamente assim que terminar a sua reprodução.</li>
+    </ul>
+
+    <h2>E os vídeos?</h2>
+
+    <video width="600" poster="thumb.jpg" controls autoplay>
+        <source src="meu-video.webm" type="video/webm">
+        <source src="meu-video.mp4" type="video/mp4">
+        <source src="meu-video.ogg" type="video/ogg">
+        <p>Infelizmente seu navegador não consegue carregar o vídeo.</p>        
+    </video>
+    <p>Antes de mais nada, vamos criar a tag &lt;video&gt; e configurar alguns atributos importantes:</p>
+    <ul>
+        <li><em>widith</em> vai indicar a largura que o vídeo vai ter na tela. nesse exemplo, 600px.</li>
+        <li><em>poster</em> configura uma imagem que vai aparecer com uma capa, enquanto o visitante não apertar o play para reproduzir o vídeo</li>
+        <li><em>controls</em> vai configurar se os controles do vídeo vão aparecer na parte inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a palavra controls na tag &lt;video&gt;.</li>
+        <li><em>autoplay diz para o navegador se o vídeo vai começar a tocar automaticamente, assim que a página for carregada.</em></li>
+    </ul>
+
+
+
+</body>
+</html>

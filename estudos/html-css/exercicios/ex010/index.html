@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+<body>
+    <h1>Vamos criar um link</h1>
+    <p>Para criar um hyperlink, devemos criar <strong>âncoras</strong> através da tag &lt;a&gt;. O principal atributo dessa tag é o <em>href</em>, que cria uma referência hipertexto. Vamos ver um exemplo simples.</p>
+    <a href="https://gustavoguanabara.github.io">Acesse meu perfil GitHub</a>
+
+    <p>Outro atributo bem útil da tag de âncora é o <em>hreflang</em>, que permite indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação.</p>
+    <a href="https://www.w3schools.com/html/" hreflang="en">Site da W3Schools (em Inglês) </a>
+
+    <h2>Mira no Alvo</h2>
+    <ul type="square">
+        <li>_self: Vai abrir o link na janela ou frame atual (padrão);</li>
+        <li>_blank: Vai abrir o link em uma nova janela em branco;</li>
+        <li>_top: Vai desfazer todos os frames e abrir o destino no navegador completo;</li>
+        <li>_parent: Similar ao uso do _top em uma referência à janela mãe;</li>
+        <li>nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir.</li>
+    </ul>
+    <a href="pagina2.html" target="_self">continuar navegando no site</a>
+    <a href="https://gustavoguanabara.github.io" target="_blank">Abrir meu perfil GitHub em outra janela</a>
+    
+    <h2>Esse link é seu ou dos outros?</h2>
+    <p>Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo <em>rel</em>. Esse atributo aceita vários valores, entre eles vou citar:</p>
+    <ul type="circle">
+        <li>next: Indica que o link é para a próxima parte do documento atual;</li>
+        <li>prev: Indica que o link é para a parte anterior do documento atual;</li>
+        <li>author: Indica que é um link para o site do autor do artigo atual;</li>
+        <li>external: Indica que é um link para outro site que não faz parte do site;</li>
+        <li>nofolow: Indica que é um link para um site não endossado, como um link pago.</li>
+    </ul>
+    <a href="pagina2.html" target="_self" rel="next">continuar navegando no site</a>
+    <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Abrir meu perfil GitHub em outra janela</a>
+    
+    <h2>Downloads</h2>
+    <a href="arquivos/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixe aqui o PDF do meu livro</a>
+    <p>Aqui vão alguns <em>media types</em> bem usados no nosso dia-a-dia</p>
+    <ul>
+        <li>application/zip</li>
+        <li>text/html</li>
+        <li>text/css</li>
+        <li>text/javascript</li>
+    </ul>
+    <ul>
+        <li>video/mp4</li>
+        <li>video/H264</li>
+        <li>video/JPEG</li>
+        <li>audio/aac</li>
+    </ul>
+    <ul>
+        <li>audi/mpeg</li>
+        <li>font/ttf</li>
+        <li>image/jpeg</li>
+        <li>image/png</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Tipos de Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Para criar uma ordered list, vamos usar a tag &lt;ol&gt; &lt;/ol&gt;</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+    <p>A tag &lt;ol&gt; &lt;/ol&gt; possui um parâmetro <em>type</em>, onde configuramos o tipo de marcador da lista atual. As opções de valores para esse parãmetro são:</p>
+
+    <p>1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, ...</p>
+    <p>A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, ...</p>
+    <p>a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, ...</p>
+    <p>I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV, ...</p>
+    <p>i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv, ...</p>
+
+    <h2>Listas não Ordenadas</h2>
+    <p>Para criar uma unordered list, vamos usar a tag &lt;ul&gt; &lt;/ul&gt;</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <p>O marcador padrão é a bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propriedade type da tag &lt;ul&gt; &lt;/ul&gt; com os seguintes valores:</p>
+    
+    <p>disc - Padrão, uma bola preta totalmente pintada</p>
+    <p>circle - Uma bola com uma borda preta e sem preenchimento</p>
+    <p>square - Um pequeno quadrado preto totalmente pintado</p>
+
+    <h2>Misturando as coisas</h2>
+    <p>Podemos também crar listas mistas, configurando listas dentro de outras listas. Veja o exemplo a seguir:</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ol type="a">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+        </ol>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <h2>Lista de definições</h2>
+    <p>É como se fosse um dicionário, temos os termos e as suas descrições. É uma lista sem demarcadores, mas bem útil em alguns casos.</p>
+    <p>Toda lista de definições está dentro de uma tag &lt;dl&gt; &lt;/dl&gt; (definition list) Cada termo é um &lt;dt&gt; &lt;/dt&gt; (definition term) e cada descrição é um &lt;dd&gt; &lt;/dd&gt; (definition description). Assim como os itens da lista, essas duas últimas tags possuem fechamento opcional, segundo a referência oficial HTML5.</p>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para cirar o conteúdo de sites.</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criar interatividades em sites.</dd>
+    </dl>
+</body>
+</html>
